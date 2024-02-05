@@ -44,48 +44,63 @@ the sales director, Tony also provided some notes to Peter to support his work.
 
 
 # SQL Queries 
- - 1 
+ - 1 For the first query I have created the store procedure because we might want to check products with different promo types.
 ![Screenshot 2024-02-04 191616](https://github.com/Ad1tyaBhardwaj19/AtliQ_Mart_Analysis_PowerBi_SQL/assets/158819480/32ed0115-a660-4ee7-9045-44aeab145c94)
 - 2
 ![Screenshot 2024-02-04 191732](https://github.com/Ad1tyaBhardwaj19/AtliQ_Mart_Analysis_PowerBi_SQL/assets/158819480/2aedd14c-feaa-4257-91cd-3977901f616b)
+- Created view for further calculation because we need promo_price again and again instead of writing big code again and again i created views for the promo_price
+![image](https://github.com/Ad1tyaBhardwaj19/AtliQ_Mart_Analysis_PowerBi_SQL/assets/158819480/f68df933-b12f-46e7-901b-e375c69e155a)
+
 - 3
-![Screenshot 2024-02-04 191838](https://github.com/Ad1tyaBhardwaj19/AtliQ_Mart_Analysis_PowerBi_SQL/assets/158819480/72cd2dc3-dc9f-416f-bacd-06d43888a2f9)
-- Result of 3
-![Screenshot 2024-02-04 191900](https://github.com/Ad1tyaBhardwaj19/AtliQ_Mart_Analysis_PowerBi_SQL/assets/158819480/ccbc5afd-9129-4c00-b3f5-fe2545b2970b)
+![Screenshot 2024-02-05 200305](https://github.com/Ad1tyaBhardwaj19/AtliQ_Mart_Analysis_PowerBi_SQL/assets/158819480/9f00face-dd5c-4526-9433-deee6f344679)
 - 4
 ![Screenshot 2024-02-04 192013](https://github.com/Ad1tyaBhardwaj19/AtliQ_Mart_Analysis_PowerBi_SQL/assets/158819480/e14e0b07-8322-42f8-a445-ae6b8e45490f)
 - 5
-![Screenshot 2024-02-04 192054](https://github.com/Ad1tyaBhardwaj19/AtliQ_Mart_Analysis_PowerBi_SQL/assets/158819480/bcfd1c45-6763-4d31-9a65-2e3489a66fc0)
-- Result of 5
-![Screenshot 2024-02-04 192104](https://github.com/Ad1tyaBhardwaj19/AtliQ_Mart_Analysis_PowerBi_SQL/assets/158819480/ca268c39-85b5-4841-b796-961742ff9dc4)
-
-#SQL Query
-For the first query i have created the store procedure because we might want to check products with different promo types.
+![Screenshot 2024-02-05 200415](https://github.com/Ad1tyaBhardwaj19/AtliQ_Mart_Analysis_PowerBi_SQL/assets/158819480/e39a4197-da73-4a53-bb06-9836b417474a)
 
 
 
 # Insights From the Dashboard 
 
-Report was created on Power BI Desktop & it was then published to Power BI Service.
+The report was created on Power BI Desktop & it was then published to Power BI Service.
 
-Following inferences can be drawn from the dashboard;
+The following inferences can be drawn from the dashboard;
 
 ###  Store Performance
- - Most of Revenue by City was directly linked with the no of stores presemt their, but the highest Incremental Revenue % was seen in Madura which has only 4 stores as compared to Bengaluru which has 10 stores. Even for Vijaywada City Incremental Revenue % was higher which has only 2 stores
- - Stores in Vishakhapatnam and Hydrabad didn't do that well in terms of Incremental Revenue %
+ - Most of the Revenue by City was directly linked with the no of stores present their, but the highest Incremental Revenue % was seen in Madura which has only 4 stores as compared to Bengaluru which has 10 stores. Even for Vijaywada City Incremental Revenue % was higher which has only 2 stores
+ - Stores in Vishakhapatnam and Hyderabad didn't do that well in terms of Incremental Revenue %
 
 ### Promotion Type
-- Most of the revenue was generated on Diwali Campaign.
-- The Incremental Sold Quantity during Campaigns were "226k" .
-- Promo Type "500 Cashback" did the best in terms of generating Incremental Revenue % and maintain the healthy balance between Incremental Revenue and Incremental Sold Quantity, for Promo Type "BOGOF" there is a huge difference between Incremental Revenue and Incremental Sold Quantity.
-- There is a Negetive Decline in Promo Types: "33% OFF", "50 % OFF" , "25% OFF".
-- Promo Type "25% OFF" didn't go well neither with Incremental Revenue nor with Incremental Sold Quantity . 
-- Even though Promo Type "500 Casgback" has the lower Average Discount % (16.67%) still it has generated the highest Revenue amongst other Promo Types which has the higher Discount %.
+- Most of the revenue was generated on the Diwali Campaign.
+- The Incremental Sold Quantity during Campaigns was "226k".
+- Promo Type "500 Cashback" did the best in terms of generating Incremental Revenue % and maintaining the healthy balance between Incremental Revenue and Incremental Sold Quantity, for Promo Type "BOGOF" there is a huge difference between Incremental Revenue and Incremental Sold Quantity.
+- There is a Negative Decline in Promo Types: "33% OFF", "50 % OFF", "25% OFF".
+- Promo Type "25% OFF" didn't go well either with Incremental Revenue or with Incremental Sold Quantity. 
+- Even though Promo Type "500 Cashback" has a lower Average Discount % (16.67%) still it has generated the highest Revenue amongst other Promo Types which has a higher Discount %.
 
 ### Product and Category
-- Total Sales during campaigns were (247.98 M) and Sold Quantity were (435K).
+- Total Sales during campaigns were (247.98 M) and Sold Quantity was (435K).
 - Category Combo1 has generated the highest Revenue and has also maintained the balance between both Incremental(Revenue and Sold Units).
-- There is a Negetive Trend in Category Personal Care for the both Incremental(Revenue and Sold Units).
-- The Discount based Promo Types has not performed well as compared to "500 Cashback" and "BOGOF" Promo Type.  
-- In products where we have given discount based products the Incremental Revenue % is Negetive.
+- There is a Negative Trend in the Category of Personal Care for both Incremental(Revenue and Sold Units).
+- The Discount based Promo Types have not performed well as compared to the "500 Cashback" and "BOGOF" Promo Types.  
+- In products where we have given discount-based products the Incremental Revenue % is Negative.
 
+# Recommendations
+
+### Store Distribution Optimization:
+- Considering the correlation between the number of stores and revenue, evaluate the performance of cities with a higher number of stores like Bengaluru. Assess if the market saturation is affecting incremental revenue and consider optimizing the store count in such cities.
+- Explore the potential for expanding in cities with fewer stores, especially in Trivandrum and Vijayawada, where the store count is low.
+
+### Focus on Madura City's Success Model:
+- Investigate the factors contributing to the high Incremental Revenue % in Madura City with only 4 stores. Identify successful strategies implemented in this city and consider replicating them in other cities, especially those with a similar store count.
+
+### Promotional Strategy:
+- Focus on optimizing the promotional strategy by leveraging the success of the "500 Cashback" promo type. Consider expanding and fine-tuning this type of promotion to maintain a healthy balance between Incremental Revenue and Incremental Sold Quantity.
+- Reevaluate and potentially adjust or discontinue promo types with negative trends, such as "33% OFF," "50% OFF," and "25% OFF." Analyze the reasons behind the decline and make data-driven decisions on whether to revamp or replace these promotions
+
+### Discount Strategy:
+- Reevaluate the discount strategy, especially for products where discount-based promotions are resulting in negative Incremental Revenue %. Assess whether the discounts are aligning with customer preferences or if adjustments are needed.
+- Given the success of the "500 Cashback" promo type with a lower average discount percentage, consider experimenting with lower discounts in other promotions to test their impact on revenue.
+
+### Continuous Monitoring:
+- Implement a system for continuous monitoring and evaluation of store performance, campaign effectiveness, and product/category trends. This will allow for quick adjustments based on evolving market dynamics.
